@@ -8,7 +8,19 @@
   Entrega: 3 de septiembre de 2026
 
 * [Práctica 2: Conjuntos](practica02)   
+<<<<<<< HEAD
    Entrega: 24 de septiembre de 2026
+=======
+   Entrega: 28 de septiembre de 2026
+
+* [Práctica 3: Conjunto de estudiantes](practica03)<br>
+  Entrega: 12 de octubre de 2026
+
+### Proyecto final
+
+* [Proyecto final: Base de datos de otro dominio](proyectofinal)<br>
+  Entrega: Por definir (semanas de certificación, del 30 de noviembre al 11 de diciembre de 2026)
+>>>>>>> d02ea255488eb640d522a6f2024b567a167e431c
 
 ### Formato de entrega
 

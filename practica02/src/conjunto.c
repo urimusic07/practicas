@@ -4,7 +4,11 @@
  * Completen las funciones pendientes según conjunto.h.
  * Usen funciones, arreglos y apuntadores; no usen estructuras, memoria
  * dinámica, archivos ni ordenamientos.
+<<<<<<< HEAD
  * Autoría: Molina Fuentes Uri Israel
+=======
+ * Autoría: Completa tu nombre.
+>>>>>>> d02ea255488eb640d522a6f2024b567a167e431c
  */
 
 #include <stdio.h>
@@ -21,6 +25,7 @@ int buscarElemento(const int conjunto[], int cantidad, int elemento) {
 }
 
 /* Agrega un elemento si no existe y queda espacio. */
+<<<<<<< HEAD
 int agregarElemento(int conjunto[], int capacidad, int *cantidad,int elemento) {
     if (buscarElemento(conjunto, *cantidad, elemento) != -1){
         return 0;
@@ -31,10 +36,16 @@ int agregarElemento(int conjunto[], int capacidad, int *cantidad,int elemento) {
     conjunto[*cantidad]= elemento;
     (*cantidad)++;
     return 1;
+=======
+int agregarElemento(int conjunto[], int capacidad, int *cantidad,
+                    int elemento) {
+    // Aquí va su código.
+>>>>>>> d02ea255488eb640d522a6f2024b567a167e431c
 }
 
 /* Elimina un elemento y conserva el orden de los restantes. */
 int eliminarElemento(int conjunto[], int *cantidad, int elemento) {
+<<<<<<< HEAD
     int indice = buscarElemento(conjunto, *cantidad, elemento);
     if (indice == -1) {
         return 0;
@@ -44,11 +55,15 @@ int eliminarElemento(int conjunto[], int *cantidad, int elemento) {
     }
     (*cantidad)--;
     return 1;       
+=======
+    // Aquí va su código.
+>>>>>>> d02ea255488eb640d522a6f2024b567a167e431c
 }
 
 /* Sustituye un elemento sin cambiar la cantidad ni introducir repetidos. */
 int reemplazarElemento(int conjunto[], int cantidad, int elemento,
                        int reemplazo) {
+<<<<<<< HEAD
     if (elemento == reemplazo) {
         return 0;
     }
@@ -59,16 +74,24 @@ int reemplazarElemento(int conjunto[], int cantidad, int elemento,
     
     conjunto[indice] = reemplazo;
     return 1;
+=======
+    // Aquí va su código.
+>>>>>>> d02ea255488eb640d522a6f2024b567a167e431c
 }
 
 /* Deja el conjunto vacío, conservando el arreglo y su capacidad. */
 void vaciarConjunto(int *cantidad) {
+<<<<<<< HEAD
     *cantidad = 0;
+=======
+    // Aquí va su código.
+>>>>>>> d02ea255488eb640d522a6f2024b567a167e431c
 }
 
 /* Copia los elementos a otro arreglo, conservando su orden. */
 int copiarConjunto(const int origen[], int cantidad,
                    int destino[], int capacidadDestino) {
+<<<<<<< HEAD
     if (capacidadDestino < cantidad) { // Corregido: se compara capacidadDestino en vez de la función
         return -1;
     }
@@ -76,33 +99,45 @@ int copiarConjunto(const int origen[], int cantidad,
         destino[i] = origen[i];
     }
     return cantidad;
+=======
+    // Aquí va su código.
+>>>>>>> d02ea255488eb640d522a6f2024b567a167e431c
 }
 
 /* Indica si A es subconjunto de B, sin importar el orden. */
 int esSubconjunto(const int conjuntoA[], int cantidadA,
                  const int conjuntoB[], int cantidadB) {
+<<<<<<< HEAD
     for (int i = 0; i < cantidadA; i++) {
         if (buscarElemento(conjuntoB, cantidadB, conjuntoA[i]) == -1) {
             return 0;
         }
     }
     return 1; // Corregido: faltaba retornar 1 si pasa todas las validaciones
+=======
+    // Aquí va su código.
+>>>>>>> d02ea255488eb640d522a6f2024b567a167e431c
 }
 
 /* Indica si los conjuntos tienen los mismos elementos, sin importar el orden. */
 int sonConjuntosIguales(const int conjuntoA[], int cantidadA,
                        const int conjuntoB[], int cantidadB) {
+<<<<<<< HEAD
     if (cantidadA != cantidadB) {
         return 0;
     }
     return esSubconjunto(conjuntoA, cantidadA, conjuntoB, cantidadB) &&
            esSubconjunto(conjuntoB, cantidadB, conjuntoA, cantidadA);             
+=======
+    // Aquí va su código.
+>>>>>>> d02ea255488eb640d522a6f2024b567a167e431c
 }
 
 /* Calcula la unión conservando primero A y después los elementos nuevos de B. */
 int unirConjuntos(const int conjuntoA[], int cantidadA,
                  const int conjuntoB[], int cantidadB,
                  int resultado[], int capacidadResultado) {
+<<<<<<< HEAD
     int cantidadresultadoactual = 0;
 
     if (capacidadResultado < cantidadA + cantidadB) {
@@ -123,12 +158,16 @@ int unirConjuntos(const int conjuntoA[], int cantidadA,
         }
     }
     return cantidadresultadoactual;
+=======
+    // Aquí va su código.
+>>>>>>> d02ea255488eb640d522a6f2024b567a167e431c
 }
 
 /* Calcula la intersección conservando el orden de A. */
 int intersectarConjuntos(const int conjuntoA[], int cantidadA,
                         const int conjuntoB[], int cantidadB,
                         int resultado[], int capacidadResultado) {
+<<<<<<< HEAD
     int cantidadresultadoactual = 0;
 
     for (int i = 0; i < cantidadA; i++) {
@@ -141,12 +180,16 @@ int intersectarConjuntos(const int conjuntoA[], int cantidadA,
         }
     }
     return cantidadresultadoactual;
+=======
+    // Aquí va su código.
+>>>>>>> d02ea255488eb640d522a6f2024b567a167e431c
 }
 
 /* Calcula la diferencia A-B conservando el orden de A. */
 int diferenciarConjuntos(const int conjuntoA[], int cantidadA,
                         const int conjuntoB[], int cantidadB,
                         int resultado[], int capacidadResultado) {
+<<<<<<< HEAD
     int cantidadresultadoactual = 0;
 
     for (int i = 0; i < cantidadA; i++) {
@@ -159,6 +202,9 @@ int diferenciarConjuntos(const int conjuntoA[], int cantidadA,
         }
     }
     return cantidadresultadoactual;
+=======
+    // Aquí va su código.
+>>>>>>> d02ea255488eb640d522a6f2024b567a167e431c
 }
 
 /* Muestra el conjunto con llaves, comas y un salto de línea al final. */
@@ -170,4 +216,8 @@ void mostrarConjunto(const int conjunto[], int cantidad) {
         printf("%d", conjunto[indice]);
     }
     printf("}\n");
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d02ea255488eb640d522a6f2024b567a167e431c
